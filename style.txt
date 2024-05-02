@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-image: url("images/bac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: #fff;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.task-area {
+    border: 1px solid lightgray;
+}
+
+.task-tabs {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+
+.task-tabs div {
+    padding: 1em;
+    cursor: pointer;
+}
+
+
+#under-line {
+    height: 4px;
+    background-color: pink;
+    position: absolute;
+    width: 70px;
+    left: 0px;
+    top:52px;
+    padding: 0px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.task-done {
+    text-decoration: line-through;
+}
