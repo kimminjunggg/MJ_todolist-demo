@@ -1,24 +1,94 @@
-body {
+* {
     margin: 0;
-    background-image: url(/images/bac.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: rgb(95, 179, 153);
+    min-height: 100vh;
+    width: 100%;
 }
 
 .container {
-    background-color: #fff;
+    width: 100%;
     min-height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
 }
 
-.task-area {
-    border: 1px solid lightgray;
-    position: relative;
+.container .input-area {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(95, 179, 153);
+    padding: 50px 0 40px 0 ;
+    border-bottom: 1px solid #000;
 }
+
+
+#todolist-content {
+    padding: 0 30px;
+    color: #fff;
+}
+
+#todolist-content h1 {
+    font-size: 1rem;
+}
+
+#todolist-content p {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+
+.area-button {
+    display: flex;
+    flex-direction: column;
+}
+
+#task-input {
+    /* width: 100%; */
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: rgb(255, 211, 92);
+    margin: 10px 0;
+    padding-left: 15px;
+    font-size: 1rem;
+}
+
+#add-button {
+    /* width: 50%; */
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color:rgb(136, 179, 153);
+    font-weight: bold;
+}
+
+
+.task-area {
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    position: relative;
+    padding: 20px 15px;
+}
+
+.task-area #all, #ongoing, #done {
+    background-color: rgb(255, 167, 255);
+    margin-right: 5px;
+    color:  rgb(187, 30, 187);
+    font-weight: bold;
+}
+
 
 .task-tabs {
     display: flex;
-    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+
 }
 
 .task-tabs div {
@@ -29,17 +99,19 @@ body {
 #under-line {
     padding: 0;
     height: 4px;
-    background-color: pink;
-    width: 60px;
+    background-color: rgb(187, 30, 187);
+    /* width: 64px; */
     position: absolute;
-    left: 0px;
-    top: 52px;
+    left: 15px;
+    top: 72px;
 }
 
 .task {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    background-color: rgb(225, 176, 248);
+    margin-bottom: 10px;
 }
 
 .task-done {
