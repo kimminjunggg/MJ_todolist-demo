@@ -117,3 +117,8 @@ html, body {
 .task-done {
     text-decoration: line-through;
 }
+
+#input-section {
+    width: 100%;
+    display: flex;
+}

@@ -18,7 +18,15 @@
         <div id="todolist-content">
           <h1 id="getToday"></h1>
           <p>Todo List</p>
-          
+          <div class="area-button">
+            <input
+              autofocus="true"
+              type="text"
+              id="task-input"
+              placeholder="Whats on your mind..."
+            />
+            <button id="add-button">Add to do</button>
+          </div>
         </div>
       </section>
 
@@ -29,26 +37,11 @@
           <div id="ongoing">진행중</div>
           <div id="done">끝남</div>
         </div>
-        <div id="task-board">
-          
-        </div>
-        
+        <div id="task-board"></div>
       </section>
     </div>
 
-    <section>
-      <div class="area-button">
-          <input
-            autofocus="true"
-            type="text"
-            id="task-input"
-            placeholder="Whats on your mind..."
-          />
-          <button id="add-button">Add to do</button>
-        </div>
-    </section>
-    
-    
+    <section id="input-section"></section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
